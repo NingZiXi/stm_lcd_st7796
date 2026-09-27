@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(stm_lcd_st7796 C)
+add_library(stm_lcd_st7796 STATIC src/stm_lcd_st7796.c)
+target_include_directories(stm_lcd_st7796 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_compile_features(stm_lcd_st7796 PUBLIC c_std_11)
